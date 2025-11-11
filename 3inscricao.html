@@ -1,0 +1,80 @@
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscrição — Festa Estranha com Gente Esquisita</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+
+        
+<header>
+<nav class="navbar">
+    
+<h1>Festa Estranha</h1>
+<ul>
+<li><a href="1index.html">Home</a></li>
+<li><a href="2atracoes.html">Atrações</a></li>
+<li><a href="3inscricao.html">Inscreva-se</a></li>
+<li><a href="4info.html">Informações</a></li>
+</ul>
+<button id="modoBtn">🌙</button>
+</nav>
+</header>
+
+
+<main class="form-section">
+<section class="form-container">
+<h2>Inscreva-se para participar!</h2>
+<p>Garanta sua entrada na festa mais estranha e divertida do Brasil.</p>
+
+
+<form id="formInscricao">
+<div class="form-group">
+<label for="nome">Nome completo:</label>
+<input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+</div>
+
+
+<div class="form-group">
+<label for="apelido">Apelido:</label>
+<input type="text" id="apelido" name="apelido" placeholder="Como quer ser chamado?" required>
+</div>
+
+
+<div class="form-group">
+<label for="celular">Número de celular:</label>
+<input type="tel" id="celular" name="celular" placeholder="(XX) XXXXX-XXXX"  required>
+</div>
+
+
+<div class="form-group">
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+</div>
+
+
+<button type="submit" class="btn">Enviar inscrição</button>
+</form>
+</section>
+</main>
+
+
+<footer>
+<p>© 2025 Festa Estranha — Todos os direitos reservados.</p>
+</footer>
+
+
+<script src="script2.js"></script>
+
+<script>
+const form = document.getElementById('formInscricao');
+form.addEventListener('submit', (e) => {
+e.preventDefault();
+alert('Inscrição enviada com sucesso!');
+form.reset();
+});
+</script>
+</body>
+</html>
